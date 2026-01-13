@@ -93,7 +93,6 @@ body {
     top: 0px;
     width: 223px;
     height: 117px;
-    background-repeat: none;
     animation: cycle 8s infinite, crossFade 8s infinite;
 }
 
@@ -194,7 +193,7 @@ body {
 .card h2 {
     font-family: "Roboto", sans-serif;
     font-size: 32px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #DCC4F4;
     text-align: center;
     margin-bottom: 10px;
