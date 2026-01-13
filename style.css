@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E0419;
 }
 
 .page {
@@ -13,7 +17,7 @@ body {
 .banner {
     width: 100%;
     height: 250px;
-    background-color: #1D0830;
+    background-color: #210936;
     margin-top: 0;
     box-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.5);
 }
