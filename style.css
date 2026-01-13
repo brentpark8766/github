@@ -86,8 +86,6 @@ body {
 
 .header-image img {
     display: block;
-    width: 100%;
-    height: auto;
 }
 
 .header-image::after {
