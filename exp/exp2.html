@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experiment 2</title>
+
+    <style>
+        body {
+            height: 750px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Helvetica", sans-serif;
+        }
+
+        header {
+            width: 600px;
+            background: white;
+            border: 5px solid black;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+            font-weight: 600px;
+            color: black;
+            line-height: 1.2em;
+        }
+
+        p {
+            margin: 0;
+            padding-top: 24px;
+            font-size: 24px;
+            font-weight: 300px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Experiment 2 - Favorite Color Background</h1>
+        <p id="text"></p>
+    </header>
+
+    <script>
+
+        var colorChoices = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+        
+        function getColor() {
+            var input = prompt("Which of these is your favorite color?\nred, orange, yellow, green, blue, purple, pink");
+
+            if (input === null) {
+                return null;
+            }
+
+            else {
+                return input.toLowerCase();
+            } 
+        }
+
+        var userColor = getColor();
+
+        if (userColor !== null) {
+            if (userColor === "red" || userColor === "orange" || userColor === "yellow" || userColor === "green" || userColor === "blue" || userColor === "purple" || userColor === "pink") {
+                document.body.style.backgroundColor = userColor;
+                document.querySelector("#text").textContent = "Your favorite color is " + userColor + ". Enjoy the background!";
+            }
+
+            else {
+                document.querySelector("#text").textContent = "Error: please pick from the provided color choices.";
+            }
+        }
+        
+        else {
+            document.querySelector("#text").textContent = "Refresh the page to select a color.";
+        }
+
+    </script>
+
+</body>
+
+</html>
