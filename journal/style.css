@@ -70,8 +70,8 @@ main {
     padding: 20px 64px;
     box-sizing: border-box;
     border-radius: 15px;
-    box-shadow:
-        0 0 0 8px #60C5C880, 0 0 16px #60C5C8A6, 0 0 36px #60C5C866;
+    box-shadow: 0 0 0 8px #60C5C880, 0 0 16px #60C5C8A6, 0 0 36px #60C5C866;
+    margin-bottom: 64px;
 }
 
 .post h2 {
