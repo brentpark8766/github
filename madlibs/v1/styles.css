@@ -1,11 +1,18 @@
 body {
     margin: 0;
     display: grid;
-    place-items: center;
-    /* overflow: hidden; */
+    justify-items: center;  
+    align-items: start; 
+    overflow: hidden;
     min-height: 100vh;
     font-family: "IBM Plex Mono", monospace;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+
+    /* implement animation for final */
+    background-image: url(images/matrix_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -16,31 +23,31 @@ header {
 
 h1 {
     font-family: "Orbitron", sans-serif;
-    font-size: 48 px;
+    font-size: 32px;
     font-weight: 500;
     color: #4EF17A;
 }
 
 main {
+    position: relative;
     width: 1200px;
     height: 750px;
     display: grid;
     place-items: center;
-    position: relative;
+    box-sizing: border-box;
+    padding-top: 64px;
+
 }
 
-.questions {
-    width: 700px;
-    padding: 32px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(#2C2C2C);
+.questions, section.story{
+    width: 600px;
+    height: 620px;
+    padding: 12px 32px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(44, 44, 44, 1);
     border-radius: 16px;
     box-sizing: border-box;
-}
-
-/* story implemented with JS l8r */
-.story {
-    display: none;
+    grid-area: 1 / 1;
 }
 
 form {
@@ -50,7 +57,7 @@ form {
 
 form p {
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 label {
@@ -77,7 +84,7 @@ input[type="text"]:focus {
     box-shadow: 0 0 0 3px rgba(60, 255, 120, 0.15);
 }
 
-input[type="submit"] {
+input[type="submit"], button {
     display: block;
     margin-left: auto;
     margin-top: 16px;
@@ -88,6 +95,31 @@ input[type="submit"] {
     font-family: "Orbitron", sans-serif;
     font-size: 16px;
     box-sizing: border-box;
-    background: rgba(78, 241, 122);
+    background: rgb(4, 180, 42);
     color: black;
+    transition: background-color 0.6s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgb(0, 255, 43);
+}
+
+/* story implemented with JS l8r */
+section.story {
+    display: none;
+}
+
+body.story-view .questions {
+    display: none;
+}
+
+body.story-view section.story {
+    display: block;
+}
+
+section.story p {
+    margin: 0;
+    line-height: 2.4em;
+    font-size: 18px;
+    color: #ffffff; 
 }
