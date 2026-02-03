@@ -12,18 +12,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
-    <script src="script.js" defer></script> 
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-
+        <h1>Into the Matrix</h1>
     </header>
 
     <main>
+        <section class="questions"> 
+            <h2>Enter your destiny</h2>
 
+            <form>
+                <p>
+                    <label for="adj1">Adjective</label>
+                    <input type="text" id="adj1" required>
+                </p>
+
+                <p>
+                    <label for="noun1">Noun</label>
+                    <input type="text" id="noun1" required>
+                </p>
+
+                <p>
+                    <label for="job">Job</label>
+                    <input type="text" id="job" required>
+                </p>
+
+                <p>
+                    <label for="place">Place</label>
+                    <input type="text" id="place" required>
+                </p>
+
+                <p>
+                    <label for="food">Food</label>
+                    <input type="text" id="food" required>
+                </p>
+
+                <p>
+                    <label for="noun2">Noun (Singular)</label>
+                    <input type="text" id="noun2" required>
+                </p>
+
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </p>
+
+                <p>
+                    <label for="noun3">Noun</label>
+                    <input type="text" id="noun3" required>
+                </p>
+
+                <p>
+                    <label for="verb">Verb</label>
+                    <input type="text" id="verb" required>
+                </p>
+
+                <p>
+                    <label for="color">Color</label>
+                    <input type="text" id="color" required>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+
+        <section class="story">
+            <article>
+                <h2>Your chosen fate</h2>
+
+                <p>
+                    The world you know is ___ <!-- adj1 -->
+                    . It is built on ___ <!-- noun1 -->
+                    , carefully designed to comfort you. You work as a ___ <!-- job -->
+                    , living in a ___ <!-- place -->
+                    , eating ___ <!-- food -->
+                    , without question. But something feels off. The room goes silent. 
+                    In front of you sits a ___ <!-- noun2 -->
+                    , quietly humming, relaxed. It begins, "You've felt it your whole life, ___ <!-- name -->
+                    ." He then offers, "The blue choice lets you return to the world you know. The red choice shows you the true ___ <!-- noun3 -->
+                    . Which will it be?" The screen glitches, you ___ <!-- verb -->
+                    , and reach out. You choose ___ <!-- color -->
+                    . The system makes it clear: There is no going back.
+                </p>
+            </article>
+        </section>
     </main>
 </body>
 
