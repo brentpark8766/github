@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mad Libs V1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Enter your destiny</h1>
+        <!-- Change to "Your chosen path" in story-view -->
+    </header>
+
+    <main>
+        <section class="questions"> 
+            <form>
+                <p>
+                    <label for="adj1">Type a Adjective</label>
+                    <input type="text" id="adj1" required>
+                </p>
+
+                <p>
+                    <label for="noun1">Type a Noun</label>
+                    <input type="text" id="noun1" required>
+                </p>
+
+                <p>
+                    <label for="job">Type a Job</label>
+                    <input type="text" id="job" required>
+                </p>
+
+                <p>
+                    <label for="place">Type a Place</label>
+                    <input type="text" id="place" required>
+                </p>
+
+                <p>
+                    <label for="food">Type a Food</label>
+                    <input type="text" id="food" required>
+                </p>
+
+                <p>
+                    <label for="noun2">Type a Noun (Singular)</label>
+                    <input type="text" id="noun2" required>
+                </p>
+
+                <p>
+                    <label for="name">Type a Name</label>
+                    <input type="text" id="name" required>
+                </p>
+
+                <p>
+                    <label for="noun3">Type a Noun</label>
+                    <input type="text" id="noun3" required>
+                </p>
+
+                <p>
+                    <label for="color">Type a Color</label>
+                    <input type="text" id="color" required>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+
+        <section class="story">
+            <article>
+                <p>
+                    The world you know is _____ <!-- adj1 -->
+                    . It is built on _____ <!-- noun1 -->
+                    , carefully designed to comfort you. You work as a _____ <!-- job -->
+                    , living in a _____ <!-- place -->
+                    , eating _____ <!-- food -->
+                    , without question. But something feels off. The room goes silent. 
+                    In front of you sits a _____ <!-- noun2 -->
+                    , quietly humming, relaxed. It begins, "You've felt it your whole life, _____ <!-- name -->
+                    ." He then offers, "The blue choice lets you return to the world you know. The red choice shows you the true _____ <!-- noun3 -->
+                    . Which will it be?" The screen glitches, you pause, and reach out. You choose _____ <!-- color -->
+                    . The system makes it clear: There is no going back.
+                </p>
+
+                <button type="button" class="retry">Retry</button>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

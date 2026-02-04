@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    display: grid;
+    justify-items: center;  
+    align-items: start; 
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: rgb(0, 0, 0);
+
+    /* implement animation for final */
+    background-image: url(images/matrix_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 16px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #4EF17A;
+}
+
+main {
+    position: relative;
+    width: 1200px;
+    height: 750px;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    padding-top: 64px;
+
+}
+
+.questions, section.story{
+    width: 600px;
+    height: 620px;
+    padding: 12px 32px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(44, 44, 44, 1);
+    border-radius: 16px;
+    box-sizing: border-box;
+    grid-area: 1 / 1;
+}
+
+form {
+    margin: 0;
+    height: 100%;
+}
+
+form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 24px;
+    padding: 12px 8px;
+    background: transparent;
+    border: 1px solid rgba(61, 175, 88);
+    box-sizing: border-box;
+    color: #ffffff; 
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: rgba(60, 255, 120);
+    box-shadow: 0 0 0 3px rgba(60, 255, 120, 0.15);
+}
+
+input[type="submit"], button {
+    display: block;
+    margin-left: auto;
+    margin-top: 16px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: rgb(4, 180, 42);
+    color: black;
+    transition: background-color 0.6s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgb(0, 255, 43);
+}
+
+/* story implemented with JS l8r */
+section.story {
+    display: none;
+}
+
+body.story-view .questions {
+    display: none;
+}
+
+body.story-view section.story {
+    display: block;
+}
+
+section.story p {
+    margin: 0;
+    line-height: 2.4em;
+    font-size: 18px;
+    color: #ffffff; 
+}
