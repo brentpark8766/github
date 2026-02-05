@@ -3,10 +3,13 @@
     "use strict";
     console.log("reading js");
 
-    const form = document.querySelector("form");
-    const madlibs = document.querySelector("article");
+    const form = document.querySelector("#form");
+    const madlibs = document.querySelector("#destiny");
+    const title = document.querySelector("#title");
+    const btn = document.querySelector(".retry");
+    const error = document.querySelector("#error");
 
-    form.addEventListener("Submit", function(e) {
+    form.addEventListener("submit", function(e) {
 
         e.preventDefault();
 
@@ -21,49 +24,52 @@
         const color = document.querySelector("#color").value;
 
         let story;
+        let userError;
+
+        error.textContent = "";
 
         if (adj == "") {
-            story = "You must input an adjective";
+            userError = "You must input an adjective";
             document.querySelector("#adj").focus();
         }
 
         else if (noun1 == "") {
-            story = "You must input a noun";
+            userError = "You must input a noun";
             document.querySelector("#noun1").focus();
         }
 
         else if (job == "") {
-            story = "You must input a job";
+            userError = "You must input a job";
             document.querySelector("#job").focus();
         }
 
         else if (place == "") {
-            story = "You must input a place";
+            userError = "You must input a place";
             document.querySelector("#place").focus();
         }
 
         else if (food == "") {
-            story = "You must input a food";
+            userError = "You must input a food";
             document.querySelector("#food").focus();
         }
 
         else if (noun2 == "") {
-            story = "You must input another noun";
+            userError = "You must input another noun";
             document.querySelector("#noun2").focus();
         }
 
         else if (name == "") {
-            story = "You must input a name";
+            userError = "You must input a name";
             document.querySelector("#name").focus();
         }
 
         else if (noun3 == "") {
-            story = "You must input another noun";
+            userError = "You must input another noun";
             document.querySelector("#noun3").focus();
         }
 
         else if (color == "") {
-            story = "You must input a color";
+            userError = "You must input a color";
             document.querySelector("#color").focus();
         }
 
@@ -75,9 +81,27 @@
             for (let i = 0; i < textFields.length; i++) {
                 textFields[i].value = "";
             }
+
+            document.body.classList.add("output")
+            title.textContent = "Your Chosen Path"
+
+            madlibs.textContent = story
+
         }
 
-        madlibs.innerHTML = story
+        error.textContent = userError;
+
+    });
+
+    btn.addEventListener("click", function() {
+
+        document.body.classList.remove("output");
+
+        title.textContent = "Enter Your Destiny";
+
+        error.textContent = "";
+
+        document.querySelector("#adj").focus();
 
     });
 

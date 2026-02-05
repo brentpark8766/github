@@ -19,78 +19,70 @@
 
 <body>
     <header>
-        <h1>Enter your destiny</h1>
-        <!-- Change to "Your chosen path" in story-view -->
+        <h1 id="title">Enter Your Destiny</h1>
     </header>
 
     <main>
         <section class="questions"> 
-            <form>
+            <form id="form">
                 <p>
-                    <label for="adj1">Type a Adjective</label>
-                    <input type="text" id="adj1" required>
+                    <label for="adj">Type an Adjective</label>
+                    <input type="text" id="adj">
                 </p>
 
                 <p>
                     <label for="noun1">Type a Noun</label>
-                    <input type="text" id="noun1" required>
+                    <input type="text" id="noun1">
                 </p>
 
                 <p>
                     <label for="job">Type a Job</label>
-                    <input type="text" id="job" required>
+                    <input type="text" id="job">
                 </p>
 
                 <p>
                     <label for="place">Type a Place</label>
-                    <input type="text" id="place" required>
+                    <input type="text" id="place">
                 </p>
 
                 <p>
                     <label for="food">Type a Food</label>
-                    <input type="text" id="food" required>
+                    <input type="text" id="food">
                 </p>
 
                 <p>
                     <label for="noun2">Type a Noun (Singular)</label>
-                    <input type="text" id="noun2" required>
+                    <input type="text" id="noun2">
                 </p>
 
                 <p>
                     <label for="name">Type a Name</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name">
                 </p>
 
                 <p>
                     <label for="noun3">Type a Noun</label>
-                    <input type="text" id="noun3" required>
+                    <input type="text" id="noun3">
                 </p>
 
                 <p>
                     <label for="color">Type a Color</label>
-                    <input type="text" id="color" required>
+                    <input type="text" id="color">
                 </p>
+                
+                <div class="incomplete">
+                    <p id="error"></p>
 
-                <p>
                     <input type="submit" value="Submit">
-                </p>
+                </div>
             </form>
         </section>
 
         <section class="story">
             <article>
-                <p>
-                    The world you know is _____ <!-- adj1 -->
-                    . It is built on _____ <!-- noun1 -->
-                    , carefully designed to comfort you. You work as a _____ <!-- job -->
-                    , living in a _____ <!-- place -->
-                    , eating _____ <!-- food -->
-                    , without question. But something feels off. The room goes silent. 
-                    In front of you sits a _____ <!-- noun2 -->
-                    , quietly humming, relaxed. It begins, "You've felt it your whole life, _____ <!-- name -->
-                    ." He then offers, "The blue choice lets you return to the world you know. The red choice shows you the true _____ <!-- noun3 -->
-                    . Which will it be?" The screen glitches, you pause, and reach out. You choose _____ <!-- color -->
-                    . The system makes it clear: There is no going back.
+                <p id="destiny">
+                    The world you know is _____. It is built on _____, carefully designed to comfort you. You work as a _____, living in a _____, eating _____, without question. But something feels off. The room goes silent. 
+                    In front of you sits a _____, quietly humming, relaxed. It begins, "You've felt it your whole life, _____." He then offers, "The blue choice lets you return to the world you know. The red choice shows you the true _____. Which will it be?" The screen glitches, you pause, and reach out. You choose _____. The system makes it clear: There is no going back.
                 </p>
 
                 <button type="button" class="retry">Retry</button>
