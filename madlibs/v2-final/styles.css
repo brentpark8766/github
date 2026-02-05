@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     font-family: "IBM Plex Mono", monospace;
     background-color: rgb(0, 0, 0);
-    background-image: url(images/matrix_background.jpg);
+    background-image: url(images/matrix_background_final.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,9 +22,10 @@ header {
 h1 {
     font-family: "Orbitron", sans-serif;
     font-size: 32px;
-    font-weight: 500;
-    color: #4EF17A;
+    font-weight: 700;
+    color: rgba(255, 255, 255);
     letter-spacing: 2px;
+    text-shadow: 0 0 6px rgba(78, 241, 122, 0.9), 0 0 12px rgba(78, 241, 122, 0.8), 0 0 24px rgba(78, 241, 122, 0.7), 0 0 6px rgba(0, 0, 0, 1), 0 0 24px rgba(0, 0, 0, 0.9), 0 0 64px rgba(0, 0, 0, 0.8);
 }
 
 main {
@@ -41,7 +42,7 @@ main {
 .questions, .story{
     width: 600px;
     padding: 12px 32px;
-    background: rgba(0, 0, 0, 0.925);
+    background: rgba(0, 0, 0, 0.9);
     border: 1px solid rgba(44, 44, 44, 1);
     border-radius: 16px;
     box-sizing: border-box;
@@ -66,7 +67,7 @@ label {
     margin-top: 10px;
     margin-bottom: 6px;
     font-size: 14px;
-    color: white;
+    color: rgba(255, 255, 255);
 }
 
 input[type="text"] {
@@ -140,5 +141,5 @@ body.output .story {
     margin-bottom: 0;
     line-height: 2.4em;
     font-size: 18px;
-    color: white; 
+    color: rgba(255, 255, 255);
 }

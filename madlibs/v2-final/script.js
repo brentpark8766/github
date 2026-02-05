@@ -29,47 +29,47 @@
         error.textContent = "";
 
         if (adj == "") {
-            userError = "You must input an adjective";
+            userError = "You must input an Adjective";
             document.querySelector("#adj").focus();
         }
 
         else if (noun1 == "") {
-            userError = "You must input a noun";
+            userError = "You must input a Noun";
             document.querySelector("#noun1").focus();
         }
 
         else if (job == "") {
-            userError = "You must input a job";
+            userError = "You must input a Job";
             document.querySelector("#job").focus();
         }
 
         else if (place == "") {
-            userError = "You must input a place";
+            userError = "You must input a Place";
             document.querySelector("#place").focus();
         }
 
         else if (food == "") {
-            userError = "You must input a food";
+            userError = "You must input a Food";
             document.querySelector("#food").focus();
         }
 
         else if (noun2 == "") {
-            userError = "You must input another noun";
+            userError = "You must input another Noun";
             document.querySelector("#noun2").focus();
         }
 
         else if (name == "") {
-            userError = "You must input a name";
+            userError = "You must input a Name";
             document.querySelector("#name").focus();
         }
 
         else if (noun3 == "") {
-            userError = "You must input another noun";
+            userError = "You must input another Noun";
             document.querySelector("#noun3").focus();
         }
 
         else if (color == "") {
-            userError = "You must input a color";
+            userError = "You must input a Color";
             document.querySelector("#color").focus();
         }
 
