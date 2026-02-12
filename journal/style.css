@@ -126,6 +126,22 @@ main {
     transform: scale(1.1);
 }
 
+.portrait {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 12px;
+}
+
+figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+
 footer {
     font-family: "Inter", sans-serif;
     font-size: 14px;
