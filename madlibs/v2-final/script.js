@@ -74,7 +74,7 @@
         }
 
         else {
-            story = `The world you know is ${adj}. It is built on ${noun1}, carefully designed to comfort you. You work as a ${job}, living in a ${place}, eating ${food}, without question. But something feels off. The room goes silent. In front of you sits a ${noun2}, quietly humming, relaxed. It begins, "You've felt it your whole life, ${name}." He then offers, "The blue choice lets you return to the world you know. The red choice shows you the true ${noun3}. Which will it be?" The screen glitches, you pause, and reach out. You choose ${color}. The system makes it clear: There is no going back.`;
+            story = `The world you know is <em class="inputword">${adj}</em>. It is built on <em class="inputword">${noun1}</em>, carefully designed to comfort you. You work as a <em class="inputword">${job}</em>, living in a <em class="inputword">${place}</em>, eating <em class="inputword">${food}</em>, without question. But something feels off. The room goes silent. In front of you sits a <em class="inputword">${noun2}</em>, quietly humming, relaxed. It begins, "You've felt it your whole life, <em class="inputword">${name}</em>." He then offers, "The blue choice lets you return to the world you know. The red choice shows you the true <em class="inputword">${noun3}</em>. Which will it be?" The screen glitches, you pause, and reach out. You choose <em class="inputword">${color}</em>. The system makes it clear: There is no going back.`;
 
             const textFields = document.querySelectorAll("input[type=text]");
 
@@ -85,7 +85,7 @@
             document.body.classList.add("output")
             title.textContent = "Your Chosen Path"
 
-            madlibs.textContent = story
+            madlibs.innerHTML = story
 
         }
 
