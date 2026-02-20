@@ -27,7 +27,7 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding-left: 64px;
+    padding-left: 40px;
 }
 
 h1 {
@@ -71,7 +71,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 64px;
+    padding-right: 40px;
 }
 
 .frame {
@@ -86,12 +86,10 @@ main {
 }
 
 .outer {
-    border: 36px solid #242424; 
+    border: 32px solid #242424; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
 .frame img {
-    width: auto;
-    height: 520px;
     display: block;
 }
