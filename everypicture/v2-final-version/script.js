@@ -43,7 +43,7 @@
         const blurValue = percentage * 14
         img.style.filter = `blur(${blurValue}px)`;
 
-        // function that integrate the element change once the image is focused
+        // function that integrates the element change once the image is focused
         if (blurValue < 1 && !startTimer) {
             startTimer = true;
 
