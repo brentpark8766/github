@@ -95,5 +95,6 @@ main {
     filter: blur(14px);
     transition: filter 0.1s ease-out;
     cursor: crosshair;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
 

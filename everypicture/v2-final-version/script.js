@@ -26,11 +26,17 @@
 
         const mouseDistanceX = e.clientX - centerX;
         const mouseDistanceY = e.clientY - centerY;
-
+        
+        // find distance of mouse from center
         const distance = Math.hypot(mouseDistanceX, mouseDistanceY);
+
+        // find largest possible distance from center
         const maxDistance = Math.hypot(position.width / 2, position.height / 2);
+
+        // converts distance to a percentage of max distance to use as a scale
         const percentage = Math.min(distance / maxDistance, 1);
         
+        // calculate how much to blur image based on distance calcs
         const blurValue = percentage * 14
         img.style.filter = `blur(${blurValue}px)`;
 
