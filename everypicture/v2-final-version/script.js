@@ -7,6 +7,7 @@
     const title = document.querySelector("#title");
     const story = document.querySelector(".story");
 
+    // array stores all the elements that get changed through the function
     const artworks = [
         {src: "images/cartoon.jpg", title: "The Medley", story: "The artwork to represent the start of my journey, and one that captures the childhood energy of colorful doodles and playful characters."}, 
         {src: "images/mononoke.jpg", title: "Mononoke", story: "A shift into structured imagination. My use of color dissipates, signaling the change to a mature study of achromatic shading."}, 
@@ -18,7 +19,9 @@
     let current = 0;
     let startTimer = false;
 
+    // function that allows mouse position to focus the artwork
     img.addEventListener("mousemove", (e) => {
+        // get the positional elements 
         const position = img.getBoundingClientRect();
 
         const centerX = position.left + position.width / 2;
@@ -40,22 +43,23 @@
         const blurValue = percentage * 14
         img.style.filter = `blur(${blurValue}px)`;
 
+        // function that integrate the element change once the image is focused
         if (blurValue < 1 && !startTimer) {
             startTimer = true;
 
             setTimeout (function () {
+                // goes through the array and ensures cycle loop
                 current = (current + 1) % artworks.length;
 
-                setTimeout (function () {
-                    img.src = artworks[current].src;
-                    title.textContent = artworks[current].title;
-                    story.textContent = artworks[current].story;
+                // change elements
+                img.src = artworks[current].src;
+                title.textContent = artworks[current].title;
+                story.textContent = artworks[current].story;
 
-                    img.style.filter = "blur(14px)";
-
-                    startTimer = false;
-                }, 500);
-            }, 2000); 
+                // reset blur and timer
+                img.style.filter = "blur(14px)";
+                startTimer = false;
+            }, 5000); 
         }
     });
 
